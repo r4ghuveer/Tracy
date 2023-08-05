@@ -84,17 +84,20 @@
 }
 
 body {
-    background-image: url('./background.webp');
+    /* background-image: url('./background.webp'); */
+    background-color: black;
     background-size: cover;
     /* This ensures the image covers the whole page */
     background-repeat: no-repeat;
 }
 
 .container {
-    background-color: rgb(129, 129, 129, 0.2);
+    background-color: rgb(129, 129, 129, 0.1);
+    font-family: 'Roboto Mono',monospace;
     height: 40px;
     width: 100%;
     margin-top: 5px;
+    display: inline;
 }
 
 a {
