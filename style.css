@@ -125,7 +125,9 @@ ul {
     right: 0;
     bottom: 0;
 }
-
+#btn{
+    font-size: 14px;
+}
 /* Styles for the #txt element */
 #txt {
     /* display: none; */
