@@ -12,67 +12,65 @@
 </head>
 
 
-<body style="background-color: rgb(10, 10, 10);">
+<body style="background-color: rgb(11, 11, 11);">
   <div class="container" style="width: 100px;">
-    <ul class="nav justify-content-center " >
+    <ul class="nav justify-content-center ">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="https://github.com/r4ghuveer" style="color: white; cursor:grab; display: block; margin-bottom: 10px" target="_blank">Github
-        <img src="github-mark/github.png" alt="not_found" style="width: 22px; height: 22px; margin-top: 7px; display: block; margin-left: 15px"> </a>
-        
+        <a class="nav-link active jello-horizontal" aria-current="page" href="https://github.com/r4ghuveer"
+          style="color: rgb(51, 224, 51); cursor:grab; display: block; margin-bottom: 10px" target="_blank">Github
+          <img src="github-mark/github.png" alt="not_found"
+            style="width: 22px; height: 22px; margin-top: 7px; display: block; margin-left: 15px"> </a>
+
       </li>
-      
+
     </ul>
   </div>
   <div class="common-container">
 
-  
-  <div class="center-container">
-    <a href="https://github.com/r4ghuveer/Tracy/raw/master/Tracy_Setup_1.0.0.zip" download>
+
+    <div class="center-container ">
+      <a href="https://github.com/r4ghuveer/Tracy/raw/master/Tracy_Setup_1.0.0.zip" download>
 
 
-      <button id="btn" class="shadow-drop-center " style="cursor: pointer;" onclick="invert()">Tracy</button></a>
-      
+        <button id="btn" class="shadow-drop-center jello-horizontal" style="cursor: pointer; color: white" onclick="invert()">Tracy</button></a>
+
       <p id="txt" style="color: white;" class="fade-in-element">Download Started!</p>
     </div>
   </div>
   <script>
     const downloadText = document.getElementById('txt');
-    
+
     function wait(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
-  }
+    }
     let invert = async () => {
       const button = document.getElementById('btn');
       const downloadText = document.getElementById('txt');
 
-     
+
       button.style.backgroundColor = 'white';
       button.style.color = 'black';
 
-     
+
       button.classList.add('shake-vertical');
 
       setTimeout(() => {
-        
+
         button.classList.remove('shake-vertical');
-       
+
         button.classList.add('scale-down-vertical-center');
 
         setTimeout(() => {
           button.style.display = 'none';
-          
+
         }, 100);
       }, 1000);
       await wait(2000);
-      
+
       downloadText.classList.add('fade-in');
-  
+
     }
 
-    const tickle = () => {
-      let buttonElement = document.getElementById('btn');
-      buttonElement.classList.add("jello-vertical");
-    }
     const hoverableDiv = document.getElementById('btn');
 
     hoverableDiv.addEventListener('mousemove', (event) => {
@@ -82,9 +80,13 @@
       const xOffset = (clientX - left - width / 2) / width * 30;
       const yOffset = (clientY - top - height / 2) / height * 30;
 
-      hoverableDiv.style.boxShadow = `${-xOffset}px ${-yOffset}px 20px 0 rgba(255, 255, 255, .55)`;
+      hoverableDiv.style.boxShadow = `${-xOffset}px ${-yOffset}px 20px 0 rgb(141, 64, 219)`;
+      hoverableDiv.style.color='rgb(141, 64, 219)'
     });
-
+    hoverableDiv.addEventListener('mouseleave', (event) => {
+      hoverableDiv.style.color='white';
+    });
+    
     hoverableDiv.addEventListener('mouseleave', () => {
       hoverableDiv.style.boxShadow = '0 0 0 0 transparent';
     });
