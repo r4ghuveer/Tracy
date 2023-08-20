@@ -6,6 +6,7 @@ Tracy is a voice automation software that takes user voice as instruction and pe
 
 
 
+
 ## Technologies :
 1) Python and Python libraries
 2) Electron
