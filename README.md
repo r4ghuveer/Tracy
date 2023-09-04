@@ -4,6 +4,12 @@
 
 Tracy is a voice automation software that takes user voice as instruction and performs the required task.
 
+: Created a voice command automation software that takes the user’s voice input and performs
+the required task. In Python, I used the voice recognition library for converting the user’s voice into text 
+input and the pyttsx3 library to make a text-to-speech response. I used various Python libraries to create
+the automation functionalities. For building the user interface I used Electron JS.
+
+
 
 
 
