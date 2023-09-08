@@ -12,7 +12,7 @@
 </head>
 
 
-<body style="background-color: rgb(11, 11, 11);">
+<body >
   <div class="container" style="width: 100px;">
     <ul class="nav justify-content-center ">
       <li class="nav-item">
@@ -31,12 +31,16 @@
     <div class="center-container ">
       <a href="https://github.com/r4ghuveer/Tracy/raw/master/Tracy_Setup_1.0.0.zip" download>
 
+        
 
-        <button id="btn" class="shadow-drop-center jello-horizontal" style="cursor: pointer; color: white" onclick="invert()">Tracy</button></a>
+        <button id="btn" class="shadow-drop-center " style="width: 160px; cursor: pointer; color: white; display: inline-block;" onclick="invert()">Tracy</button></a>
+
 
       <p id="txt" style="color: white;" class="fade-in-element">Download Started!</p>
     </div>
   </div>
+  <p class="click2">↑</p>
+  <p class="click">click here to download</p>
   <script>
     const downloadText = document.getElementById('txt');
 
@@ -81,7 +85,7 @@
       const yOffset = (clientY - top - height / 2) / height * 30;
 
       hoverableDiv.style.boxShadow = `${-xOffset}px ${-yOffset}px 20px 0 rgb(141, 64, 219)`;
-      hoverableDiv.style.color='rgb(141, 64, 219)'
+      <!-- hoverableDiv.style.color='rgb(141, 64, 219)' -->
     });
     hoverableDiv.addEventListener('mouseleave', (event) => {
       hoverableDiv.style.color='white';
