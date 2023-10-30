@@ -27,8 +27,9 @@ Password ( Activation ) : 14211
 1) "Wikipedia" - Lets you search topics on wikipedia.
 2) "Screenshot" - Lets you take screenshot of your current window.
 3) "open google" - Simple opens google.
-4)  "youtube" - After saying youtube, user can say the video they want to watch in youtube.
-5)  "note" - Taking note in notepad.
+    3.1) "recent" - Opens recently closed tabs.
+5)  "youtube" - After saying youtube, user can say the video they want to watch in youtube.
+6)  "note" - Taking note in notepad.
 
     5.1)  After saying note. for example : "Take a note for me".
     
